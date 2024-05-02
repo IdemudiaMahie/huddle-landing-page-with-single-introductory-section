@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+/* Colors */
+--Violet: hsl(257, 40%, 49%);
+--Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: aliceblue;
+}
+
+article {
+    min-height: 100vh;
+    background-image: url(./images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: var(--Violet);
+    padding: 2.2em;
+}
+
+/* header {
+    
+} */
+
+img {
+    max-width: 100%;
+}
+
+img:first-of-type {
+    width: 40%;
+    float: left;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+button {
+    width: 70%;
+    margin: 0 auto;
+    padding: 0.6rem;
+    border-radius: 1.5rem;
+    font: inherit;
+    color: var(--Violet);
+    font-weight: 600;
+}
+
+button:hover,
+button:focus {
+    cursor: pointer;
+    background-color: var(--Soft-Magenta);
+}
+
+iconify-icon {
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 0 0.3rem;
+    padding: 0.3rem;
+}
+
+iconify-icon:hover,
+iconify-icon:focus {
+    cursor: pointer;
+    color: var(--Soft-Magenta);
+    border: 1px solid var(--Soft-Magenta);
+}
+
+article footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+footer:has(.attribution) {
+    position: relative;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    color: green;
+    position: fixed;
+    width: 100%;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media screen and (min-width: 1440px) {
+    article {
+        background-image: url(./images/bg-desktop.svg);
+    }
+}
+
